@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень 1</title>
+    <link rel="stylesheet" href="../css/level_1_t.css">
+    <script class="u-script" type="text/javascript" src="../js/menu.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/level_1.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class='head-1'>
+        <div class='h-1' ><p id='name'>Имя: </p></div>
+        <div class='h-2' ><p id='score'>Баллы: </p></div>
+        <div class="timer">
+            <div><p id="minutes" style="margin-right: 10px; padding: 5px;">00</p></div>
+            <div><p style="margin-right: 10px;">:</p></div>
+            <div><p id="seconds" style=" padding: 5px;">00</p></div>
+        </div>
+        <div class='h-3'><p><a href='index_t.html'>Главная</a></p></div>
+        <div class='h-4'><p><a href='menu_t.html'>Меню</a></p></div>
+        </div>
+    </header>
+    
+    <div class='section-1'>
+        <div class='block'>
+            
+            <div class='matr'>
+                <div class='container'>
+                    <img id='cont_1' src='../img/contur_var5.png'>
+                    <img id='cont_2' src='../img/contur_var5.png'>
+                    <img id='cont_3' src='../img/contur_var5.png'>
+                    <img id='cont_4' src='../img/contur_var5.png'>
+                    <img  id='pic'   src='../img/matr_level1.png'>
+                </div>
+            </div>
+            <div class='buttons'>
+                <button id='start' onclick='resize()'>Начать</button>
+                <p>Необходимо 4 раза нажать на матрешку, с условием, что каждый последующий контур должен быть меньше предыдущего</p>
+               
+            </div>
+
+            <div class='end_form' id='end_form'>
+                <form action='#' class='form-container'>
+                    <h3 id='res'>Итог</h3>
+                    <p id='sc'>Баллы: </p>
+                    <button type='button' class='again' onclick="document.location='level_1_t.html'">Попробовать ещё раз</button>
+                    <button type='button' class='next' onclick="document.location='level_2_t.html'">Следующий уровень</button>
+                </form>
+            </div>
+
+        </div>
+        
+    
+    </div>
+    <footer><p>@Смагина А.В.</p></footer>
+
+</body>
+</html>

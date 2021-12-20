@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень 3</title>
+    <link rel="stylesheet" href="../css/level_3.css">
+    <script class="u-script" type="text/javascript" src="../js/menu.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/level_3.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class='head-1'>
+        <div class='h-1' ><p id='name'>Имя: </p></div>
+        <div class='h-2' ><p id='score'>Баллы: </p></div>
+        <div class="timer">
+            <div><p id="minutes" style="margin-right: 10px; padding: 5px;">00</p></div>
+            <div><p style="margin-right: 10px;">:</p></div>
+            <div><p id="seconds" style=" padding: 5px;">00</p></div>
+        </div>
+        <div class='h-3'><p><a href='../index.html'>Главная</a></p></div>
+        <div class='h-4'><p><a href='menu.html'>Меню</a></p></div>
+        </div>
+    </header>
+    <div class='section-1'>
+        <div class='container'>
+            <div class='left_bar'>
+                <button id='start' onclick='start()'>Начать</button>
+                <p>За 30 секунд необходимо выбрать имена, подходящее под условие, которое появится в начале игры. Выбранный вами правильный ответ больше не будет показываться</p>
+                <h4>Правильные ответы:</h4>
+                <h4 id='correct'>-</h4>
+                <h4>Неправильные ответы</h4>
+                <h4 id='incorrect'>-</h4>
+            </div>
+            <div class='right_bar'>
+                <p id='rule'> Условие </p>
+                <div class='box'>
+                    <div id='pic_1'>
+                        <img  src='../img/мини-матрешки/pic_1.png'>
+                        <p id='name_1'></p>
+                    </div>
+                    <div id='pic_2'>
+                        <img src='../img/мини-матрешки/pic_2.png'>
+                        <p id='name_2'></p>
+                    </div>
+                    <div id='pic_3'>
+                        <img src='../img/мини-матрешки/pic_3.png'>
+                        <p id='name_3'></p>
+                    </div>
+                    <div id='pic_4'>
+                        <img src='../img/мини-матрешки/pic_4.png'>
+                        <p id='name_4'></p>
+                    </div>
+                    <div id='pic_5'>
+                        <img src='../img/мини-матрешки/pic_5.png'>
+                        <p id='name_5'></p>
+                    </div>
+                    <div id='pic_6'>
+                        <img src='../img/мини-матрешки/pic_6.png'>
+                        <p id='name_6'></p>
+                    </div>
+                    <div id='pic_7'>
+                        <img src='../img/мини-матрешки/pic_7.png'>
+                        <p id='name_7'></p>
+                    </div>
+                    <div id='pic_8'>
+                        <img  src='../img/мини-матрешки/pic_8.png'>
+                        <p id='name_8'></p>
+                    </div>
+                    <div id='pic_9'>
+                        <img  src='../img/мини-матрешки/pic_1.png'>
+                        <p id='name_9'></p>
+                    </div>
+                    <div id='pic_10'>
+                        <img  src='../img/мини-матрешки/pic_2.png'>
+                        <p id='name_10'></p>
+                    </div>
+                    <div id='pic_11'>
+                        <img  src='../img/мини-матрешки/pic_3.png'>
+                        <p id='name_11'></p>
+                    </div>
+                    <div id='pic_12'>
+                        <img  src='../img/мини-матрешки/pic_4.png'>
+                        <p id='name_12'></p>
+                    </div>
+                    <div id='pic_13'>
+                        <img  src='../img/мини-матрешки/pic_5.png'>
+                        <p id='name_13'></p>
+                    </div>
+                    <div id='pic_14'>
+                        <img  src='../img/мини-матрешки/pic_6.png'>
+                        <p id='name_14'></p>
+                    </div>
+                    <div id='pic_15'>
+                        <img  src='../img/мини-матрешки/pic_7.png'>
+                        <p id='name_15'></p>
+                    </div>
+                    <div id='pic_16'>
+                        <img  src='../img/мини-матрешки/pic_8.png'>
+                        <p id='name_16'></p>
+                    </div>
+                    <div id='pic_17'>
+                        <img  src='../img/мини-матрешки/pic_1.png'>
+                        <p id='name_17'></p>
+                    </div>
+                    <div id='pic_18'>
+                        <img  src='../img/мини-матрешки/pic_2.png'>
+                        <p id='name_18'></p>
+                    </div>
+                    <div id='pic_19'>
+                        <img  src='../img/мини-матрешки/pic_3.png'>
+                        <p id='name_19'></p>
+                    </div>
+                    <div id='pic_20'>
+                        <img  src='../img/мини-матрешки/pic_4.png'>
+                        <p id='name_20'></p>
+                    </div>
+                    <div id='pic_21'>
+                        <img  src='../img/мини-матрешки/pic_5.png'>
+                        <p id='name_21'></p>
+                    </div>
+                    <div id='pic_22'>
+                        <img  src='../img/мини-матрешки/pic_6.png'>
+                        <p id='name_22'></p>
+                    </div>
+                    <div id='pic_23'>
+                        <img  src='../img/мини-матрешки/pic_7.png'>
+                        <p id='name_23'></p>
+                    </div>
+                    <div id='pic_24'>
+                        <img  src='../img/мини-матрешки/pic_8.png'>
+                        <p id='name_24'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='end_form' id='end_form'>
+        <form action='#' class='form-container'>
+            <h3 id='res'>Итог</h3>
+            <p id='rsc'>Правильных ответов: </p>
+            <p id='wsc'>Не правильных ответов: </p>
+            <p id='sc'>Итоговый балл: </p>
+            <button type='button' class='again' onclick="document.location='level_3.html'">Попробовать ещё раз</button>
+            <button type='button' class='next' onclick="document.location='level_4.html'">Следующий уровень</button>
+        </form>
+    </div>
+    
+    
+    
+
+    <footer><p>@Смагина А.В.</p></footer>
+
+
+</body>
+</html>

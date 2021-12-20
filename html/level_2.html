@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень 2</title>
+    <link rel="stylesheet" href="../css/level_2.css">
+    <script class="u-script" type="text/javascript" src="../js/menu.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/level_2.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class='head-1'>
+        <div class='h-1' ><p id='name'>Имя: </p></div>
+        <div class='h-2' ><p id='score'>Баллы: </p></div>
+        <div class="timer">
+            <div><p id="minutes" style="margin-right: 10px; padding: 5px;">00</p></div>
+            <div><p style="margin-right: 10px;">:</p></div>
+            <div><p id="seconds" style=" padding: 5px;">00</p></div>
+        </div>
+        <div class='h-3'><p><a href='../index.html'>Главная</a></p></div>
+        <div class='h-4'><p><a href='menu.html'>Меню</a></p></div>
+        </div>
+    </header>
+    
+    <div class='section-1'>
+        <div class='container'>
+            <div class='left_box'>
+                <div class='inf_box' id='inf_box'>
+                    <button id='start' onclick='start()'>Начать</button>
+                    <!-- <button id='open_rules' onclick="location.hash='modal_r'">Правила</button> -->
+                    <button id='change' onclick='change()'>Изменить стиль</button>
+                    <p>За 20 секунд переместите все матрешки в окошки, чей цвет совпадает с цветом матршеки</p>
+                    <!-- <div id='modal_r'>
+                        <window>
+                            <div class='head_x'>
+                                <a href="#close_window" class="close_window">X</a>
+                            </div>
+                            <p>Тут будут правила, но я их пока не придумала(((</p>
+                        </window>
+                        
+                    </div> -->
+                </div>
+                <!-- red -->
+                <div class='box_1' id='box_1' > 
+                   <div class="b11"></div>
+                   <div class="b12"></div>
+                   <div class="b13"></div>
+                </div>
+            </div>
+            <div class='middle_box'>
+                <div class='pic-1'>
+                    <img id='pic_1' class='shake' src='../img/мини-матрешки/blue.png' draggable="true">
+                    <img id='pic_1_2' class='shake' src='../img/мини-матрешки/dark-green.png' draggable="true">
+                </div>
+                <div class='pic-2'>
+                    <img id='pic_2' class='shake' src='../img/мини-матрешки/red.png' draggable="true">
+                    <img id='pic_2_2' class='shake' src='../img/мини-матрешки/yellow.png' draggable="true">
+                </div>
+                <div class='pic-3'>
+                    <img id='pic_3' class='shake' src='../img/мини-матрешки/green.png' draggable="true">
+                    <img id='pic_3_2' class='shake' src='../img/мини-матрешки/purple.png' draggable="true">
+                </div>
+                <div class='pic-4'>
+                    <img id='pic_4' class='shake' src='../img/мини-матрешки/green.png' draggable="true">
+                    <img id='pic_4_2' class='shake' src='../img/мини-матрешки/yellow.png' draggable="true">
+                </div>
+                <div class='pic-5'>
+                    <img id='pic_5' class='shake' src='../img/мини-матрешки/blue.png' draggable="true">
+                    <img id='pic_5_2' class='shake' src='../img/мини-матрешки/purple.png'>
+                </div>
+                <div class='pic-6'>
+                    <img id='pic_6' class='shake' src='../img/мини-матрешки/red.png' draggable="true">
+                    <img id='pic_6_2' class='shake' src='../img/мини-матрешки/dark-green.png' draggable="true"> 
+                </div>
+                <div class='pic-7'>
+                    <img id='pic_7' class='shake' src='../img/мини-матрешки/red.png' draggable="true">
+                    <img id='pic_7_2' class='shake' src='../img/мини-матрешки/purple.png' draggable="true"> 
+                </div>
+                <div class='pic-8'>
+                    <img id='pic_8' class='shake' src='../img/мини-матрешки/green.png' draggable="true">
+                    <img id='pic_8_2' class='shake' src='../img/мини-матрешки/dark-green.png' draggable="true"> 
+                </div>
+                <div class='pic-9'>
+                    <img id='pic_9' class='shake' src='../img/мини-матрешки/blue.png' draggable="true">
+                    <img id='pic_9_2' class='shake' src='../img/мини-матрешки/yellow.png' draggable="true"> 
+                </div>
+            </div>
+            <div class='right_box'>
+                <!-- blue -->
+                <div class='box_2' id="box_2">
+                    <div class="b21"></div>
+                    <div class="b22"></div>
+                    <div class="b23"></div>
+                </div>
+                <!-- green -->
+                <div class='box_3' id="box_3">
+                    <div class="b31"></div>
+                    <div class="b32"></div>
+                    <div class="b33"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='end_form' id='end_form'>
+        <form action='#' class='form-container'>
+            <h3 id='res'>Итог</h3>
+            <p id='sc'>Баллы: </p>
+            <button type='button' class='again' onclick="document.location='level_2.html'">Попробовать ещё раз</button>
+            <button type='button' class='next' onclick="document.location='level_3.html'">Следующий уровень</button>
+        </form>
+    </div>
+    
+
+    <footer><p>@Смагина А.В.</p></footer>
+
+
+</body>
+</html>

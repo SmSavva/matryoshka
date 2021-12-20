@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уровень 4</title>
+    <link rel="stylesheet" href="../css/level_4_t.css">
+    <script class="u-script" type="text/javascript" src="../js/menu.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/level_4.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class='head-1'>
+        <div class='h-1' ><p id='name'>Имя: </p></div>
+        <div class='h-2' ><p id='score'>Баллы: </p></div>
+        <div class="timer">
+            <div><p id="minutes" style="margin-right: 10px; padding: 5px;">00</p></div>
+            <div><p style="margin-right: 10px;">:</p></div>
+            <div><p id="seconds" style=" padding: 5px;">00</p></div>
+        </div>
+        <div class='h-3'><p><a href='index_t.html'>Главная</a></p></div>
+        <div class='h-4'><p><a href='menu_t.html'>Меню</a></p></div>
+        </div>
+    </header>
+    <div class='section-1'>
+        <div class='container'>
+            <div class='left_bar'>
+                <button id='start' onclick='start()'>Начать</button>
+                <p>Необходимо выбрать все маленькие матрешки за 40 секунд. </p>
+                <p>Матрешки меняют свой размер и расположение через каждые 5 секунд.</p>
+                <h4>Кол-во маленьких матрешек на экране</h4>
+                <h4 id='cnt'>-</h4>
+                <h4>Выбрано матрешек:</h4>
+                <h4 id='z'>-</h4>
+            </div>
+            <div class='right_bar' id='right_bar'>
+                <div class='box'>
+                    <img id='pic_1' src='../img/мини-матрешки/l4_1.png'>
+                    <img id='pic_2' src='../img/мини-матрешки/l4_2.png'>
+                    <img id='pic_3' src='../img/мини-матрешки/l4_3.png'>
+                    <img id='pic_4' src='../img/мини-матрешки/l4_4.png'>
+                    <img id='pic_5' src='../img/мини-матрешки/l4_5.png'>
+                    <img id='pic_6' src='../img/мини-матрешки/l4_6.png'>
+                    <img id='pic_7' src='../img/мини-матрешки/l4_7.png'>
+                    <img id='pic_8' src='../img/мини-матрешки/l4_8.png'>
+                    <img id='pic_9' src='../img/мини-матрешки/l4_9.png'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='end_form' id='end_form'>
+        <form action='#' class='form-container'>
+            <h3 id='res'>Итог</h3>
+            <p id='cnt_rc'>Кол-во маленьких матрешек: </p>
+            <p id='r_sc'>Кол-во правильных ответов: </p>
+            <p id='sc'>Итоговый балл: </p>
+            <button type='button' class='again' onclick="document.location='level_4_t.html'">Попробовать ещё раз</button>
+            <button type='button' class='next' onclick="document.location='end_t.html'">Итоги</button>
+        </form>
+    </div>
+    
+    
+    
+
+    <footer><p>@Смагина А.В.</p></footer>
+
+
+</body>
+</html>

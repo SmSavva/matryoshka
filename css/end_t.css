@@ -1,0 +1,111 @@
+body{
+    width: 1200px;
+    height: 700px;
+}
+body p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    /* text-align: center;    */
+}
+body h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-block-start: 0%;
+    padding:0%;
+}
+header{
+    height: 50px;
+    max-height: 70px;
+}
+header p{
+    font-size: 20px;
+}
+.head{
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.h-3{
+    margin-left: 80%;
+}
+.h-3 a{
+    text-decoration: none;
+    color: black;
+}
+.h-3 a:visited{
+    color: black;
+}
+.h-3 a:hover{
+    color:#ef655b;
+}
+footer{
+    height: 40px;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 1.5%;
+    border-top: 1.5px solid white;
+}
+footer p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    
+}
+.section-1{
+    height:615px;
+    width: 100%;
+    background-color: #00bde0;
+}
+
+.cont{
+    width:70%;
+    height: 10%;
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-left:15%;
+    margin-top:0.5%
+}
+.cont >div{
+    margin-left: 3%;
+}
+.but{
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.but button{
+    width: 20%;
+    height: 55px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background-color: #000000;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.but button:active{
+    background-color: white;
+    color: #000000;
+}

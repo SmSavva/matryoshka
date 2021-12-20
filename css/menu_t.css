@@ -1,0 +1,103 @@
+header{
+    height: 50px;
+}
+body{
+    width: 1200px;
+    height: 700px;
+}
+body p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    text-align: center;   
+}
+.head{
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.h-1{
+    margin-left: 2%;
+    margin-right: 12%;
+}
+.h-2{
+    margin-left: 2%;
+    margin-right: 12%;
+}
+.h-3{
+    margin-left: 35%;
+}
+.h-3 a{
+    text-decoration: none;
+    color: black;
+}
+.h-3 a:visited{
+    color: black;
+}
+.h-3 a:hover{
+    color:#ef655b;
+}
+.section-m-1{
+    min-height: 625px;
+    min-width: 600px;
+    background-image: url('../img/фон-index-t.png');
+    background-position: 50% 50%;
+    margin-top: 0px;
+}
+footer{
+    height: 30px;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 1.5%;
+}
+footer p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.section-m-1 h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+    text-indent: 5%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding:19px; 
+    margin-left: 48%;
+}
+.section-m-1-1{
+    height: 300px;
+    width: 25%;
+    margin-left: 63%;
+    margin-top: -2%;
+    display: -webkit-flex; /*поддержка ранних версий браузеров*/
+    -webkit-flex-wrap: nowrap; /*ранние версии браузеров*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;;
+   
+}
+.section-m-1-1 button{
+    width: 40%;
+    height: 15%;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background-color: #000000;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.section-m-1-1 button:active{
+    background-color: white;
+    color: #000000;
+}

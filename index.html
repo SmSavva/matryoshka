@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script class="u-script" type="text/javascript" src="js/index.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Матрешка</title>
+</head>
+<body>
+    <div class="section-1">
+        <h2>Матрешка</h2>
+        <div class="section-1-1">
+            <input type='text' id='name' placeholder="Введите имя" onchange="localStorage.setItem('name', this.value)">
+            <button id='start' onclick="document.location='html/menu.html'">Начать</button> 
+            <button id='change_theme' onclick="document.location='html/index_t.html'">Сменить тему</button>
+        </div>     
+    </div>
+    <footer  class='foot-1'>
+        <p>@Смагина А.В.</p>
+    </footer>
+    
+</body>
+</html>
